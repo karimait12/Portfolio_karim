@@ -31,10 +31,11 @@ function Testimonials() {
   const addData = async () => { 
      
     const newItemRef = push(ref(db, 'users'));
+    if(prenom.length>2 && message.length>5){
     set(newItemRef, {prenom:prenom,message:message})
     setPrenom('');
     setMessage('');
-    
+    }
   };
 
 
@@ -59,13 +60,13 @@ useEffect(()=>{getdata()},[])
     
 
     <div className='flex justify-center mt-4'>
-      <input placeholder="Your name" onChange={(e)=>{setPrenom(e.target.value)}} className=" max-w-lg bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" />
+      <input placeholder="Your name" value={prenom} onChange={(e)=>{setPrenom(e.target.value)}} className=" max-w-lg bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" />
       </div>
 
     
     <div className='flex justify-center flex-wrap mt-3 '>
       
-<textarea id="message" onChange={(e)=>{setMessage(e.target.value)}}  rows={4} className="block  p-2.5 w-5/12 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+<textarea id="message" value={message} onChange={(e)=>{setMessage(e.target.value)}}  rows={4} className="block  p-2.5 w-5/12 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
 
 </div>
 <div className='flex justify-center flex-wrap mt-3 '>
