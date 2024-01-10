@@ -13,7 +13,7 @@ function Hero() {
         <h1 className=' text-4xl text-center md:text-7xl md:text-left text-blue-950'>Hi , I' m Soufiane</h1>
         <h2 className='mt-3 text-3xl text-center md:text-left md:text-6xl text-blue-500'>Web and Mobile Developper</h2>
        <p className='text-sm mb-0 text-center md:text-left md:text-lg mt-3 md:mb-2 w-4/4 md:w-3/4 font-light'>Experienced Full Stack Developer passionate about bringing ideas to life through code. Skilled
-in front-end and back-end technologies
+in front-end and back-end technologies.
 </p> 
 <div className='mt-5 text-center md:mt-6 md:text-left '>
 <a  className="  md:ml-0 bg-violet-900 hover:bg-purple-950 cursor-pointer   text-white text-sm  md:text-2xl font-normal py-2 px-7 rounded-lg">
