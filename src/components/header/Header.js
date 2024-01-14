@@ -41,7 +41,7 @@ useEffect(()=>{
         Knowledges
         </a>
         
-        <a className="bg-blue-500 hover:bg-blue-700 cursor-pointer mt-5 md:mt-1  text-white text-sm  md:text-md font-normal py-2 px-5 rounded-full">
+        <a href="https://api.whatsapp.com/send?phone=0689213015&text=Hello%20from%20my%20website!" target="_blank" className="bg-blue-500 hover:bg-blue-700 cursor-pointer mt-5 md:mt-1  text-white text-sm  md:text-md font-normal py-2 px-5 rounded-full">
         Contact me
        </a>
 
