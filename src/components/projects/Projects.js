@@ -6,6 +6,7 @@ import ily from '../../assets/ily.png'
 import chatapp from '../../assets/chatapp.jpg'
 import eco from '../../assets/ecommerce.jpg'
 import cashapp from '../../assets/cashapp.jpeg'
+import foot from '../../assets/foot.png'
 import { SocialIcon } from 'react-social-icons'
 function Projects() {
 
@@ -32,6 +33,10 @@ techs:['#expo','#reactnative'],type:"mobile"}
 {img:chatapp,title:'Realtime Chat Web App',description:'real-time chat web app using React and Firebase involves combining the front-end library React with the Firebase platform for real-time data synchronization '
     ,links:['https://github.com/soufiane2001/Chatdeveloppers','https://www.youtube.com/watch?v=l60Xb16u7W8'],
 techs:['#firebase','#reactjs',"#bootstrap"],type:"web"},
+
+{img:foot,title:'Casafoot mobile App',description:''
+    ,links:['https://github.com/soufiane2001/Chatdeveloppers','https://www.youtube.com/watch?v=l60Xb16u7W8'],
+techs:['#php','#reactnative',"#tailwind","#laravel","#mysql"],type:"mobile"},
 
 
 
