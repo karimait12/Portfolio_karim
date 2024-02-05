@@ -16,13 +16,13 @@ function Testimonials() {
 
 
   const firebaseConfig = {
-    apiKey: "AIzaSyAgOf0wFlOSREp8aOdrzxADjZrlHkkiiyg",
-    authDomain: "portfolio-6de12.firebaseapp.com",
-    databaseURL: "https://portfolio-6de12-default-rtdb.firebaseio.com",
-    projectId: "portfolio-6de12",
-    storageBucket: "portfolio-6de12.appspot.com",
-    messagingSenderId: "647070473063",
-    appId: "1:647070473063:web:f803c4e8e5b9fc91bbadc2"
+  apiKey: "AIzaSyCiUt1ILE3JU-bly4aFFc4cGi7-KZh7uP4",
+  authDomain: "portfolio2-85da6.firebaseapp.com",
+  databaseURL: "https://portfolio2-85da6-default-rtdb.firebaseio.com",
+  projectId: "portfolio2-85da6",
+  storageBucket: "portfolio2-85da6.appspot.com",
+  messagingSenderId: "805286329616",
+  appId: "1:805286329616:web:b7880d35f8d06cc0793995"
   };
   
 
