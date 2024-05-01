@@ -14,7 +14,7 @@ function Projects() {
 
 
     var projects=[{img:"https://happay.com/blog/wp-content/uploads/sites/12/2022/09/cash-management-systems.jpeg",title:'Expensia cash App',description:'Elevate your financial management with our Expo CLI-driven cash management app. Seamlessly monitor expenses, track income, and maintain control of your finances. Simplify cash flow tracking for informed decision-making, all in one intuitive platform designed to empower your financial journey.'
-    ,links:['https://github.com/soufiane2001/CashAppExpoApp/tree/main/cashapp/cashapp','https://youtu.be/F3Pjh49qdzE?si=QYNLfott1XhAeVxh'],
+    ,links:['https://github.com/soufiane2001/CashAppExpoApp/tree/main/cashapp/cashapp','https://www.youtube.com/watch?v=F3Pjh49qdzE'],
                    
 techs:['#expo','#reactnative',"#expo"],type:"mobile"},{img:eco,title:'ecommerce cash on delivery plateform',description:'real-time chat web app using React and Firebase involves combining the front-end library React with the Firebase platform for real-time data synchronization '
     ,links:['https://www.youtube.com/watch?v=gj7IWaDnEXI&t=184s'],type:"web",
