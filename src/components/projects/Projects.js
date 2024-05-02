@@ -61,12 +61,12 @@ techs:['#php','#reactnative',"#tailwind","#laravel","#mysql"],type:"mobile"},
         src={x.img} 
         alt="Description of the image"
         width={500}
-        className="h-50 md:h-60"
+        className="h-60 md:h-70"
 
       />
                  <div className="px-6 py-4">
                    <div className="font-bold md:text-xl text-md mb-2">{x.title}</div>
-                        <p className="text-gray-700 text-base  md:text-xl text-sm ">
+                        <p className="text-gray-700 text-base  md:text-lg text-sm ">
                                {x.description}
                         </p>
                     </div>
