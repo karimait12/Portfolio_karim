@@ -61,7 +61,7 @@ techs:['#php','#reactnative',"#tailwind","#laravel","#mysql"],type:"mobile"},
         src={x.img} 
         alt="Description of the image"
         width={500}
-        className="h-40 md:h-45"
+        className="h-50 md:h-60"
 
       />
                  <div className="px-6 py-4">
