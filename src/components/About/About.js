@@ -26,7 +26,7 @@ function About() {
                 <li className=' text-lg'>Location : Maroc , Casablanca , Lot Nassim 259</li>
                 <li className=' text-lg'>Office : Anfa</li>
                 
-                <a href={'devcv.pdf'} target='_blank'  className="flex w-40 ml-32 md:ml-0 justify-center rounded-md bg-indigo-600 px-2 py-3 mt-6 text-xl font-medium leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Download cv</a>
+                <a href={'cv.pdf'} target='_blank'  className="flex w-40 ml-32 md:ml-0 justify-center rounded-md bg-indigo-600 px-2 py-3 mt-6 text-xl font-medium leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Download cv</a>
              </ul>
 
         </div>
