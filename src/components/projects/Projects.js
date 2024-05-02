@@ -36,7 +36,7 @@ techs:['#expo','#reactnative'],type:"mobile"}
 techs:['#firebase','#reactjs',"#bootstrap"],type:"web"},
 
 {img:foot,title:'Casafoot mobile App',description:''
-    ,links:['https://github.com/soufiane2001/Chatdeveloppers','https://www.youtube.com/watch?v=l60Xb16u7W8'],
+    ,links:['https://github.com/soufiane2001/casafootfullstackmobileapp','https://www.youtube.com/watch?v=l60Xb16u7W8'],
 techs:['#php','#reactnative',"#tailwind","#laravel","#mysql"],type:"mobile"},
 
 
@@ -61,6 +61,7 @@ techs:['#php','#reactnative',"#tailwind","#laravel","#mysql"],type:"mobile"},
         src={x.img} 
         alt="Description of the image"
         width={500}
+        className="h-45 md:h-24"
 
       />
                  <div className="px-6 py-4">
