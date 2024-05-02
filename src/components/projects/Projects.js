@@ -16,28 +16,28 @@ function Projects() {
     var projects=[{img:"https://happay.com/blog/wp-content/uploads/sites/12/2022/09/cash-management-systems.jpeg",title:'Expensia cash App',description:'Elevate your financial management with our Expo CLI-driven cash management app. Seamlessly monitor expenses, track income, and maintain control of your finances. Simplify cash flow tracking for informed decision-making, all in one intuitive platform designed to empower your financial journey.'
     ,links:['https://github.com/soufiane2001/CashAppExpoApp/tree/main/cashapp/cashapp','https://www.youtube.com/watch?v=F3Pjh49qdzE'],
                    
-techs:['#expo','#reactnative',"#expo"],type:"mobile"},{img:eco,title:'ecommerce cash on delivery plateform',description:'real-time chat web app using React and Firebase involves combining the front-end library React with the Firebase platform for real-time data synchronization '
+techs:['#expo','#reactnative',"#expo"],type:"mobile",height:300},{img:eco,title:'ecommerce cash on delivery plateform',description:'real-time chat web app using React and Firebase involves combining the front-end library React with the Firebase platform for real-time data synchronization '
     ,links:['https://www.youtube.com/watch?v=gj7IWaDnEXI&t=184s'],type:"web",
 techs:['#mysql','#reactjs',"#bootstrap","#php"]},{img:aji,title:'Ajinkriw',description:'Front end of mobile app of rent '
     ,links:['https://github.com/soufiane2001/Ajinkriw','https://www.youtube.com/watch?v=UVQUKwiEO0Q&t=1s'],
-techs:['#expo','#axios','#reactnative'],type:"mobile"},
+techs:['#expo','#axios','#reactnative'],type:"mobile",height:350},
 {img:soufmarket,title:'Soufmarket',description:'marketplace platforme to buy and sell'
     ,links:['https://github.com/soufiane2001/Marketplace','https://www.youtube.com/watch?v=tq9h_W0ZTQc'],
-techs:['#php','#laravel','#livewire','#mysql'],type:"web"},
+techs:['#php','#laravel','#livewire','#mysql'],type:"web",height:300},
 
 
 
 {img:ily,title:'Ilyass adventure',description:'game 2d adventure and comedy'
     ,links:['https://github.com/soufiane2001/game2dmobile','https://www.youtube.com/watch?v=UVQUKwiEO0Q&t=1s'],
-techs:['#expo','#reactnative'],type:"mobile"}
+techs:['#expo','#reactnative'],type:"mobile",height:300}
 ,
 {img:chatapp,title:'Realtime Chat Web App',description:'real-time chat web app using React and Firebase involves combining the front-end library React with the Firebase platform for real-time data synchronization '
     ,links:['https://github.com/soufiane2001/Chatdeveloppers','https://www.youtube.com/watch?v=l60Xb16u7W8'],
-techs:['#firebase','#reactjs',"#bootstrap"],type:"web"},
+techs:['#firebase','#reactjs',"#bootstrap"],type:"web",height:300},
 
 {img:foot,title:'Casafoot mobile App',description:''
     ,links:['https://github.com/soufiane2001/casafootfullstackmobileapp','https://www.youtube.com/watch?v=l60Xb16u7W8'],
-techs:['#php','#reactnative',"#tailwind","#laravel","#mysql"],type:"mobile"},
+techs:['#php','#reactnative',"#tailwind","#laravel","#mysql"],type:"mobile",height:500},
 
 
 
@@ -61,7 +61,7 @@ techs:['#php','#reactnative',"#tailwind","#laravel","#mysql"],type:"mobile"},
         src={x.img} 
         alt="Description of the image"
         width={500}
-        className="h-60 md:h-70"
+        height={x.height}
 
       />
                  <div className="px-6 py-4">
