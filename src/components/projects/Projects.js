@@ -38,6 +38,9 @@ techs:['#firebase','#reactjs',"#bootstrap"],type:"web",height:350},
 {img:foot,title:'Casafoot mobile App',description:''
     ,links:['https://github.com/soufiane2001/casafootfullstackmobileapp','https://www.youtube.com/watch?v=l60Xb16u7W8'],
 techs:['#php','#reactnative',"#tailwind","#laravel","#mysql"],type:"mobile",height:600},
+{img:"https://res.cloudinary.com/dzkx1z6lo/image/upload/v1715429475/cp-removebg-preview_wggt2y.png",title:'ElectroSouf',description:'Nextjs Ecommerce web App'
+    ,links:['https://github.com/soufiane2001/ElectroSouf'],
+techs:["#tailwind","#Nextjs","#mysql"],type:"web",height:600}
 
 
 
