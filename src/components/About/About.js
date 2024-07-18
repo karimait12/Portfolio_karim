@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
 import { SocialIcon } from 'react-social-icons'
-import styles from './About.module.css';
 
 
 import so2 from '../../assets/so2.png'
@@ -16,7 +15,7 @@ function About() {
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            aboutRef.current.classList.add(styles.visible);
+            aboutRef.current.classList.add("visible");
           }
         });
       },
@@ -36,6 +35,17 @@ function About() {
       ref={aboutRef}
       className={`mt-5 md:mt-20 border-b-2 border-gray-200 p-4 pb-11 md:px-20 md:pb-28 flex flex-col md:flex-row justify-around items-center ${styles.fadeIn}`}
     >
+      <style>
+      .fadeIn {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  
+      </style>
       <div className="w-60 md:w-1/3 flex justify-around md:mb-0">
         <img src={so2} alt="Profile" className="w-full" />
       </div>
