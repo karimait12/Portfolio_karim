@@ -1,4 +1,4 @@
-aimport React from 'react'
+import React from 'react'
 import { useState,useRef,useEffect } from 'react'
 import boot from '../../assets/Bootstrap.png'
 import css from '../../assets/CSS.png'
