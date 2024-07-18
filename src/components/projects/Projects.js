@@ -8,6 +8,8 @@ import eco from '../../assets/ecommerce.jpg'
 import cashapp from '../../assets/cashapp.jpeg'
 import foot from '../../assets/foot.png'
 import { SocialIcon } from 'react-social-icons'
+import { useRef } from 'react';
+import { useEffect } from 'react';
 function Projects() {
 
     var [categorie,setcat]=useState('All');
@@ -45,10 +47,65 @@ techs:["#tailwind","#Nextjs","#mysql"],type:"web",height:600}
 
 
 ];
+const aboutRef = useRef(null);
+    const totalStars = 6;
+    var rating=3;
 
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fadeIn');
+          }
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+  
+      if (aboutRef.current) {
+        observer.observe(aboutRef.current);
+      }
+  
+      return () => {
+        if (aboutRef.current) {
+          observer.unobserve(aboutRef.current);
+        }
+      };
+    }, []);
 
   return (
-    <div id='projets' className='mt-5  md:mt-20 border-b-2  border-gray-200 p-4 pb-11 md:px-20 md:pb-64'>
+    <div id='projets' ref={aboutRef} className='mt-5  md:mt-20 border-b-2  border-gray-200 p-4 pb-11 md:px-20 md:pb-64'>
+          <style>
+      {`
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+        @keyframes slideInLeft {
+          from { transform: translateX(-100%); }
+          to { transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+          from { transform: translateX(100%); }
+          to { transform: translateX(0); }
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 1s ease-in-out;
+        }
+
+        .animate-slideInLeft {
+          animation: slideInLeft 1s ease-in-out;
+        }
+
+        .animate-slideInRight {
+          animation: slideInRight 1s ease-in-out;
+        }
+      `}
+    </style>
          <h1 className=' text-center font-medium text-xl md:text-3xl text-blue-600'>Projects</h1>
         <div className='mt-5 flex justify-center flex-wrap'>
              <h2 onClick={()=>{setcat("All")}} className=' border-2 px-6 rounded-xl ml-7 mr-4 cursor-pointer hover:bg-indigo-500  hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>All</h2>
@@ -56,15 +113,15 @@ techs:["#tailwind","#Nextjs","#mysql"],type:"web",height:600}
              <h2 onClick={()=>{setcat("mobile")}} className=' border-2 px-6 rounded-xl mr-4 cursor-pointer hover:bg-indigo-500  hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Mobile</h2>
         </div>
         
-         <div className=" mt-9 md:mt-16 flex justify-around flex-wrap px-10  md:px-52"> 
+         <div className=" mt-9 md:mt-16 flex justify-around items-stretch flex-wrap px-10  md:px-52"> 
         {categorie=="All" && projects.map((x)=>{return(
-            <div className="max-w-sm rounded overflow-hidden shadow-lg self-start mt-5">
+            <div className="w-4/5 md:w-2/5 flex-grow-0 flex-shrink-0 flex flex-col justify-around p-5   rounded overflow-hidden shadow-lg  mt-8">
               
                <img
         src={x.img} 
         alt="Description of the image"
-        width={450}
-      
+    
+      className='object-contain w-full h-44'
 
       />
                  <div className="px-6 py-4">
@@ -99,12 +156,13 @@ techs:["#tailwind","#Nextjs","#mysql"],type:"web",height:600}
 
          
 {categorie=="web" && projects.map((x)=>{if(x.type=="web")return(
-            <div className="max-w-sm rounded overflow-hidden shadow-lg self-start mt-5">
+            <div className="w-4/5 md:w-2/5 flex-grow-0 flex-shrink-0 flex flex-col justify-around p-5   rounded overflow-hidden shadow-lg  mt-8">
               
                <img
         src={x.img} 
         alt="Description of the image"
-        width={500}
+       
+      className='object-contain w-full h-44'
 
       />
                  <div className="px-6 py-4">
@@ -138,12 +196,12 @@ techs:["#tailwind","#Nextjs","#mysql"],type:"web",height:600}
 
     
 {categorie=="mobile" && projects.map((x)=>{if(x.type=="mobile")return(
-            <div className="max-w-sm rounded overflow-hidden shadow-lg self-start mt-5">
+            <div className="w-4/5 md:w-2/5 flex-grow-0 flex-shrink-0 flex flex-col justify-around p-5   rounded overflow-hidden shadow-lg  mt-8">
               
                <img
         src={x.img} 
         alt="Description of the image"
-        width={500}
+         className='object-contain w-full h-44'
 
       />
                  <div className="px-6 py-4">
