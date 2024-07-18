@@ -10,42 +10,16 @@ function About() {
   
   const aboutRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            aboutRef.current.classList.add("visible");
-          }
-        });
-      },
-      { threshold: 0.1 } // Adjust this threshold as needed
-    );
+  
 
-    observer.observe(aboutRef.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   return (
     <div
       id="about"
-      ref={aboutRef}
+     
       className={`mt-5 md:mt-20 border-b-2 border-gray-200 p-4 pb-11 md:px-20 md:pb-28 flex flex-col md:flex-row justify-around items-center ${styles.fadeIn}`}
     >
-      <style>
-    {`  .fadeIn {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .visible {
-    opacity: 1;
-  }`}
-  
-      </style>
+     
       <div className="w-60 md:w-1/3 flex justify-around md:mb-0">
         <img src={so2} alt="Profile" className="w-full" />
       </div>
